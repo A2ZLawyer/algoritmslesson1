@@ -1,0 +1,23 @@
+using System;
+
+namespace algoritmlesson1task1
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            decimal n = int.Parse(Console.ReadLine());
+            int d = 0;
+            int i = 2;
+            if (i < n)
+            { 
+                if (n % i == 0)
+                    d++;
+                else i++;
+            }
+            if (d == 0)
+                Console.WriteLine("Простое");
+            else Console.WriteLine("Не простое");
+        }
+    }
+}
